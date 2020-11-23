@@ -11,6 +11,13 @@ const CategoryMealScreen = props => {
           props.navigation.navigate({ routeName: 'MealDetail' });
         }}
       />
+      <Button
+        title='Go Back'
+        onPress={() => {
+          // props.navigation.goBack();
+          props.navigation.pop();
+        }}
+      />
     </View>
   );
 };

@@ -11,6 +11,9 @@ const CategoriesScreen = props => {
           //! Alternatively, you pass the routeName as the first argument
           //! like this: ...navigate('CategoryMeals');
           props.navigation.navigate({ routeName: 'CategoryMeals' });
+
+          //! For example, user sign in screen. Navigation stack replace
+          // props.navigation.replace({ routeName: 'CategoryMeals' });
         }}
       />
     </View>

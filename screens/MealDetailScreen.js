@@ -28,7 +28,7 @@ MealDetailScreen.navigationOptions = navigationData => {
 
   return {
     headerTitle: selectedMeal.title,
-    headerRight: (
+    headerRight: () => {
       <HeaderButtons HeaderButtonComponent={HeaderButton}>
         <Item
           title='Favorite'
@@ -37,8 +37,8 @@ MealDetailScreen.navigationOptions = navigationData => {
             console.log('Mark as favorite');
           }}
         />
-      </HeaderButtons>
-    )
+      </HeaderButtons>;
+    }
   };
 };
 const styles = StyleSheet.create({
